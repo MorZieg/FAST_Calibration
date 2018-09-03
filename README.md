@@ -1,2 +1,2 @@
 # FAST_Calibration
-FAst Stress Tensor Calibration for 3D geomechanical-numerical modelling
+FAst Stress Tensor Calibration for 3D geomechanical-numerical modelling for Matlab (R)
