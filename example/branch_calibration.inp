@@ -1,0 +1,52 @@
+** Branch calibration - boundary condition scenarios
+** FAST Calibration - Example
+**
+*include,INPUT=branch_test.geom
+**
+*MATERIAL, NAME=rock
+*ELASTIC, TYPE = ISOTROPIC
+1.000000e+10, 0.26, 0.0
+*DENSITY
+2000
+**
+*SOLIDSECTION,ELSET=rock, MATERIAL=rock
+**
+*INITIAL CONDITIONS, TYPE=STRESS, FILE=branch_initial, STEP=1, INC=1
+**
+*STEP
+*STATIC
+*DLOAD
+,GRAV,9.797,0,0,-1
+*BOUNDARY
+X_move,1,,-3
+Y_move,2,,1
+X_hold,1,,0
+Y_hold,2,,0
+bottom,3,,0
+*OUTPUT, FIELD
+*ELEMENT OUTPUT
+S
+*NODE OUTPUT
+COORD, U
+*END STEP
+**
+*STEP
+*STATIC
+*BOUNDARY
+X_move,1,,-3
+Y_move,2,,3
+X_hold,1,,0
+Y_hold,2,,0
+bottom,3,,0
+*END STEP
+**
+*STEP
+*STATIC
+*BOUNDARY
+X_move,1,,-1
+Y_move,2,,1
+X_hold,1,,0
+Y_hold,2,,0
+bottom,3,,0
+*END STEP
+**
