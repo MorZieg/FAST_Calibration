@@ -19,7 +19,7 @@ The recommended citation for FAST Calibration is: (You can find the BibTeX snipp
 > Ziegler, M. O. (2018). Matlab Script FAST Calibration v1.0. GFZ Data Services. DOI: http://doi.org/10.5880/wsm.2018.003  
 
 
-[![DOI](https://img.shields.io/badge/DOI-10.2312%2Fwsm.2018.003-blue.svg)](http://doi.org/10.2312/wsm.2018.003)
+[![DOI](https://img.shields.io/badge/DOI-10.5880%2Fwsm.2018.003-blue.svg)](http://doi.org/10.5880/wsm.2018.003)
 
 ## License 
 GNU General Public License, Version 3, 29 June 2007
@@ -37,6 +37,6 @@ You should have received a copy of the GNU General Public License along with thi
 ```
 Helmholtz Centre Potsdam German Research Centre for Geoscienes GFZ
 Section 2.6: Seismic Hazard and Risk Dynamics
-Helmholtzstraﬂe 6/7
-14467 Potsdam, Germany
+Telegrafenberg
+14473 Potsdam, Germany
 ```
