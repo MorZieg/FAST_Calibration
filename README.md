@@ -1,12 +1,5 @@
 # FAST Calibration
-### _FAst Stress Tensor Calibration for 3D geomechanical-numerical modelling for Matlab ®_
-
-
-## Installation
-
-Full installation instructions are available at 
-http://doi.org/10.2312/wsm.2018.003.
-
+### _FAst Stress Tensor Calibration for 3D geomechanical-numerical modelling for Matlab Â®_
 
 ## Documentation
 
@@ -24,7 +17,7 @@ The recommended citation for FAST Calibration is: (You can find the BibTeX snipp
 ## License 
 GNU General Public License, Version 3, 29 June 2007
 
-Copyright © 2018 Helmholtz Centre Potsdam GFZ German Research Centre for Geosciences, Potsdam, Germany
+Copyright Â© 2018 Helmholtz Centre Potsdam GFZ German Research Centre for Geosciences, Potsdam, Germany
 
 FAST Calibration is free software: you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation, either version 3 of the License, or (at your option) any later version.
 FAST Calibration is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU General Public License for more details.
