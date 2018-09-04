@@ -1,11 +1,13 @@
 # FAST Calibration
-### _FAst Stress Tensor Calibration for 3D geomechanical-numerical modelling for Matlab ®_
+### _FAst Stress Tensor Calibration for 3D geomechanical-numerical modelling for Matlab®_
 
 
 ## Installation
 
-Full installation instructions are available at 
-http://doi.org/10.2312/wsm.2018.003.
+Documentation and usage examples are available online at:
+
+Ziegler, M. O. (2018). Manual of the Matlab Script FAST Calibration v1.0. World Stress Map Technical Report 18-01, GFZ German Research Centre for Geosciences.
+DOI: http://doi.org/10.2312/wsm.2018.003 [![DOI](https://img.shields.io/badge/DOI-10.2312%2Fwsm.2018.003-blue.svg)](http://doi.org/10.2312/wsm.2018.003)
 
 
 ## Documentation
