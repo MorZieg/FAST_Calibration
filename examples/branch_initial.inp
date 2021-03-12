@@ -1,0 +1,30 @@
+** Branch initial stress state
+** FAST Calibration - Example
+**
+*include,INPUT=branch.geom
+**
+*MATERIAL, NAME=rock
+*ELASTIC, TYPE = ISOTROPIC
+1.000000e+10, 0.49, 0.0
+*DENSITY
+2000
+**
+*SOLIDSECTION,ELSET=rock, MATERIAL=rock
+**
+**
+*STEP
+*STATIC
+*DLOAD
+,GRAV,9.797,0,0,-1
+*BOUNDARY
+X_move,1,,0.0
+Y_move,2,,0.0
+X_hold,1,,0
+Y_hold,2,,0
+bottom,3,,0
+*OUTPUT, FIELD
+*ELEMENT OUTPUT
+S
+*NODE OUTPUT
+COORD, U
+*END STEP
