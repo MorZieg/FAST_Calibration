@@ -1,15 +1,43 @@
 ** Branch initial stress state
 ** FAST Calibration - Example
 **
-*include,INPUT=branch.geom
+*include,INPUT=branch_model_gk4.geom
 **
-*MATERIAL, NAME=rock
+*MATERIAL, NAME=top
 *ELASTIC, TYPE = ISOTROPIC
-1.000000e+10, 0.49, 0.0
+20e9, 0.4, 0.0
 *DENSITY
-2000
+2500
 **
-*SOLIDSECTION,ELSET=rock, MATERIAL=rock
+*MATERIAL, NAME=sediments_1
+*ELASTIC, TYPE = ISOTROPIC
+35e9, 0.4, 0.0
+*DENSITY
+2700
+**
+*MATERIAL, NAME=sediments_2
+*ELASTIC, TYPE = ISOTROPIC
+7e9, 0.4, 0.0
+*DENSITY
+2700
+**
+*MATERIAL, NAME=sediments_3
+*ELASTIC, TYPE = ISOTROPIC
+29e9, 0.4, 0.0
+*DENSITY
+2700
+**
+*MATERIAL, NAME=basement
+*ELASTIC, TYPE = ISOTROPIC
+57e9, 0.4, 0.0
+*DENSITY
+2900
+**
+*SOLIDSECTION,ELSET=top, MATERIAL=top
+*SOLIDSECTION,ELSET=sediments_1, MATERIAL=sediments_1
+*SOLIDSECTION,ELSET=sediments_2, MATERIAL=sediments_2
+*SOLIDSECTION,ELSET=sediments_3, MATERIAL=sediments_3
+*SOLIDSECTION,ELSET=basement, MATERIAL=basement
 **
 **
 *STEP
@@ -17,10 +45,10 @@
 *DLOAD
 ,GRAV,9.797,0,0,-1
 *BOUNDARY
-X_move,1,,0.0
-Y_move,2,,0.0
-X_hold,1,,0
-Y_hold,2,,0
+west,1,,0.0
+south,2,,0.0
+east,1,,0
+north,2,,0
 bottom,3,,0
 *OUTPUT, FIELD
 *ELEMENT OUTPUT

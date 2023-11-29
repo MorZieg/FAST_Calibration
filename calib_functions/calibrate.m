@@ -1,8 +1,8 @@
 function [ bcx, bcy ] = calibrate(dshmin,dshmax,x,y)
-% Part of FAST Calibration v2.0 - GPLv3
+% Part of FAST Calibration v2.4 - GPLv3
 % Moritz O. Ziegler, mziegler@gfz-potsdam.de
-% DOI:      http://doi.org/10.5880/wsm.2021.002
-% Manual:  	http://doi.org/10.48440/wsm.2021.002
+% DOI:      http://doi.org/10.5880/wsm.2023.002
+% Manual:  	http://doi.org/10.48440/wsm.2023.002
 % Download:	http://github.com/MorZieg/FAST_Calibration
 % %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % This function is the heart of the FAST calibration tool and computes the

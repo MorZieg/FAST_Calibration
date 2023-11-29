@@ -1,8 +1,8 @@
 function dshmax = critical_shmax(stress_data,calib_data,x,y,bcx,bcy)
-% Part of FAST Calibration v2.0 - GPLv3
+% Part of FAST Calibration v2.4 - GPLv3
 % Moritz O. Ziegler, mziegler@gfz-potsdam.de
-% DOI:      http://doi.org/10.5880/wsm.2021.002
-% Manual:  	http://doi.org/10.48440/wsm.2021.002
+% DOI:      http://doi.org/10.5880/wsm.2023.002
+% Manual:  	http://doi.org/10.48440/wsm.2023.002
 % Download:	http://github.com/MorZieg/FAST_Calibration
 % %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % The SHmax magnitude is calibrated on the assumption of a fault that

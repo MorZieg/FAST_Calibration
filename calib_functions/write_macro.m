@@ -1,8 +1,8 @@
 function [ text ] = write_macro(stress,name,mod,folder)
-% Part of FAST Calibration v2.0 - GPLv3
+% Part of FAST Calibration v2.4 - GPLv3
 % Moritz O. Ziegler, mziegler@gfz-potsdam.de
-% DOI:      http://doi.org/10.5880/wsm.2021.002
-% Manual:  	http://doi.org/10.48440/wsm.2021.002
+% DOI:      http://doi.org/10.5880/wsm.2023.002
+% Manual:  	http://doi.org/10.48440/wsm.2023.002
 % Download:	http://github.com/MorZieg/FAST_Calibration
 % %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % write_macro creates a Tecplot 360 EX Macro to extract variables at
@@ -26,6 +26,8 @@ num = length(coords(:,1));
 header = '#!MC 1410\n';
 line1 = '$!VarSet |MFBD| = ''E:\\Program Files\\Tecplot\\Tecplot 360 EX 2015 R2''\n\n';
 
+zonecheck = '$!IF |NUMZONES| != %i\n$!PAUSE "The expected number of %i zones is not encountered. The results can be wrong or an error may occur."\n$!ENDIF\n\n';
+
 zone1 = '$!CREATERECTANGULARZONE\nIMAX = 1\nJMAX = 1\nKMAX = 1\n';
 zone2 = 'X1 = %i\nY1 = %i\nZ1 = %i\n';
 zone3 = 'X2 = %i\nY2 = %i\nZ2 = %i\n\n';
@@ -48,6 +50,8 @@ fid = fopen(filename,'w');
 
 fprintf(fid,header);
 fprintf(fid,line1);
+
+fprintf(fid,zonecheck,mod,mod);
 
 fprintf(fid,varnum);
 

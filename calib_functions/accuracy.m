@@ -1,8 +1,8 @@
 function [ ] = accuracy(stress_data,calib_data,x,y,bcx,bcy)
-% Part of FAST Calibration v2.0 - GPLv3
+% Part of FAST Calibration v2.4 - GPLv3
 % Moritz O. Ziegler, mziegler@gfz-potsdam.de
-% DOI:      http://doi.org/10.5880/wsm.2021.002
-% Manual:  	http://doi.org/10.48440/wsm.2021.002
+% DOI:      http://doi.org/10.5880/wsm.2023.002
+% Manual:  	http://doi.org/10.48440/wsm.2023.002
 % Download:	http://github.com/MorZieg/FAST_Calibration
 % %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % Function provides estimates on the validity of the calibrated stress
@@ -18,6 +18,11 @@ function [ ] = accuracy(stress_data,calib_data,x,y,bcx,bcy)
 % bcx: Best-fit boundary conditions in x' direction.
 % bcy: Best-fit boundary conditions in y' direction.
 %
+
+disp(' ')
+disp('Assessment of indirect data')
+disp(' ')
+disp(' ')
 
 for i = 1:size(stress_data,1)
     % FITs
@@ -221,5 +226,6 @@ for i = 1:size(stress_data,1)
         disp([' '])
     end
 end
+disp(' ')
 
 end

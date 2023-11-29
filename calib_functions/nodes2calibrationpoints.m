@@ -1,8 +1,8 @@
 function [ coords ] = nodes2calibrationpoints(corner,filename,num,distrib,type,minelem,Zmax,Zmin)
-% Part of FAST Calibration v2.0 - GPLv3
+% Part of FAST Calibration v2.4 - GPLv3
 % Moritz O. Ziegler, mziegler@gfz-potsdam.de
-% DOI:      http://doi.org/10.5880/wsm.2021.002
-% Manual:  	http://doi.org/10.48440/wsm.2021.002
+% DOI:      http://doi.org/10.5880/wsm.2023.002
+% Manual:  	http://doi.org/10.48440/wsm.2023.002
 % Download:	http://github.com/MorZieg/FAST_Calibration
 % %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % This function generates the coordinates for calibration points based on
